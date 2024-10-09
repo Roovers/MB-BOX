@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.arvo-regular {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .arvo-bold {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .arvo-regular-italic {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .arvo-bold-italic {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+body {
+    background-image: url('../images/fondo.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.233);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.384) 33%, rgba(0,0,0,0) 100%, rgba(0, 0, 0, 0) 100%);
+    
+}
+.nav-link {
+    color: white; /* Cambia el color del texto de los enlaces */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 3px; /* Ajusta el valor según necesites */
+}
+
+.nav-link {
+    color: white; /* Color del texto de los enlaces */
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px; /* Ajusta el valor según necesites */
+    position: relative; /* Necesario para el efecto */
+    overflow: hidden; /* Para ocultar el subrayado que sale del enlace */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0; /* Inicia desde el borde inferior */
+    width: 0; /* Inicialmente no hay ancho */
+    height: 2px; /* Altura del subrayado */
+    background: #ffeb3b; /* Color del subrayado */
+    transition: width 0.5s ease, left 0.5s ease; /* Transiciones suaves */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Se expande a 100% en hover */
+    left: 0; /* Se alinea al lado izquierdo */
+}
+
+.nav-link:hover {
+    transition: color 0.3s ease; /* Transición del color */
+    color: #000000; /* Cambio de color al hacer hover */
+    text-shadow: 0 0 15px rgb(255, 255, 255), /* Resplandor amarillo */
+                 0 0 10px rgb(255, 255, 255), /* Más resplandor */
+                 0 0 6px rgb(255, 255, 255); /* Aumento de resplandor */
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.541);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.37) 33%, rgba(0, 0, 0, 0.842) 100%, rgba(0, 0, 0, 0) 100%);
+letter-spacing: 3px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+
+.footer i {
+    transition: all 0.4s ease-in-out; /* Transición suave para múltiples propiedades */
+    color: #ffffff; /* Color inicial */
+  }
+
+  .footer i:hover {
+    color: #ffeb3b; /* Cambio de color al hacer hover */
+    transform: scale(1.2); /* Efecto de agrandamiento */
+    text-shadow: 0 0 15px rgba(255, 235, 59, 0.7), /* Resplandor amarillo */
+                 0 0 30px rgba(255, 235, 59, 0.5), /* Más resplandor */
+                 0 0 45px rgba(255, 235, 59, 0.3); /* Aumento de resplandor */
+  }
