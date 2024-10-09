@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/MB-notf.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+            Mi Empresa
+          </a>
+          <!-- Botón de colapso para móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Enlaces de la barra de navegación -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">QUIENES SOMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CLIENTES</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <h1>Hello, world!</h1>
+    
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/sld2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/sld3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/sdl4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+<!-- Footer -->
+<footer class=" footer text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        
+        <!-- Sección del Mapa -->
+        <div class="col-md-4 col-lg-4 mb-4">
+          <h5 class="text-uppercase fw-bold">Nuestra Ubicación</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26256.269640521994!2d-58.578749035819584!3d-34.65385171516138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d93bab75a3%3A0xaafe140bc9dea3db!2sB1704%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1728493775837!5m2!1ses!2sar" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  
+        <!-- Sección de Contacto -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold">Mi Empresa</h5>
+          <p>
+            Dirección: Calle Falsa 123<br>
+            Teléfono: +1 234 567 890<br>
+            Email: contacto@miempresa.com
+          </p>
+        </div>
+  
+        <!-- Enlaces rápidos -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold">Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Inicio</a></li>
+            <li><a href="#" class="text-light">Quiénes Somos</a></li>
+            <li><a href="#" class="text-light">Nuestros Clientes</a></li>
+            <li><a href="#" class="text-light">Contacto</a></li>
+          </ul>
+        </div>
+  
+    <!-- Redes Sociales -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h5 class="text-uppercase fw-bold">Síguenos</h5>
+        <div class="d-flex justify-content-start">
+          <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+      </div>
+        
+      </div>
+  
+      <!-- Copyright -->
+      <div class="text-center pt-3">
+        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
